@@ -1,0 +1,15 @@
+int f1(args)
+{
+    int data = 10;
+    if (true)
+    {
+        print(hi, these, are, arguments, to, print);
+    }
+    return data;
+}
+
+int f2(args)
+{
+    char data = 'w';
+    return data;
+}
