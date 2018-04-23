@@ -11,5 +11,12 @@ int f1(args)
 int f2(args)
 {
     char data = 'w';
+    print(hi, these, are, more, print=true, "", "arguments");
     return data;
+}
+
+int f3(args)
+{
+    int data = 20;
+    print("this is a string argument");
 }
