@@ -11,11 +11,7 @@ def load_file(file_name: str):
 
 
 def print_function_arguments(code_str: str):
-    fun_args = re.compile("""
-    (
-        print\(.*\)
-    )
-    """, re.VERBOSE)
+    fun_args = re.compile(r"""print\(.*\)""")
     res = [item.lstrip(' ').lstrip('"').rstrip('"')
            for mtch in fun_args.findall(code_str)
            for item in mtch[len("print") + 1:-1].split(',')]
